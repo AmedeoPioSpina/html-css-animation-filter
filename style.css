@@ -75,6 +75,12 @@
     transition: filter 2s;
 }
 
+.ex-8-img:hover {
+    filter: hue-rotate(180deg) blur(5px);
+    border-radius: 15px;
+    transition: filter 2s, border-radius 2s;
+}
+
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
