@@ -77,7 +77,7 @@
 
 .ex-8-img:hover {
     filter: hue-rotate(180deg) blur(5px);
-    border-radius: 15px;
+    border-radius: 10px;
     transition: filter 2s, border-radius 2s;
 }
 
@@ -85,6 +85,14 @@
     margin: 50px 100px;
     width: 400px;
 }
+
+.ex-9-img:hover {
+    filter: sepia(100%) blur(2px);
+    border-radius: 10px;
+    width: 500px;
+    transition: filter 2s, border-radius 2s, width 2s;
+}
+
 .ex-10-icon {
     font-size: 60px;
 }
