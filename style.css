@@ -96,6 +96,18 @@
 .ex-10-icon {
     font-size: 60px;
 }
+
+@keyframes spean {
+    to { transform: rotate(360deg)}
+}
+
+.ex-10-icon:hover {
+    animation-name: spean;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
