@@ -161,3 +161,29 @@
     width: 60px;
     height: 20px;
 }
+
+@keyframes left-right-left {
+    to {
+        left: 60%;
+    }
+}
+
+@keyframes right-left-right {
+    to{
+        right: 60%;
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: left-right-left;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: right-left-right;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
