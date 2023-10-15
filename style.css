@@ -178,6 +178,7 @@
     animation-name: left-right-left;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
     animation-direction: alternate;
 }
 
@@ -185,5 +186,43 @@
     animation-name: right-left-right;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes  top-bottom-top {
+    50% {
+        left: 100%;
+        top:-10px;
+    }
+    100% {
+        left: 100%;
+        top: 40px
+    }
+}
+@keyframes  bottom-top-bottom {
+    50% {
+        right: 100%;
+        bottom:-10px
+    }
+    100% {
+        right: 100%;
+        bottom: 40px
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: top-bottom-top;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: bottom-top-bottom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
     animation-direction: alternate;
 }
